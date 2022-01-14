@@ -15,6 +15,11 @@
                         @endforeach
                     </select>
                   </div>
+                  <div class="form-group">
+                    <label>Giá sản phẩm</label>
+                    <input type="text" name="giasanpham" id="giasanpham" class="form-control" placeholder="Nhập giá sản phẩm">
+                  </div>
+
 
                   <div class="form-group">
                     <label>Mô tả sản phẩm</label>

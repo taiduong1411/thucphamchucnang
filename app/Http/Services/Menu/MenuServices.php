@@ -4,6 +4,7 @@ namespace App\Http\Services\Menu;
 use App\Models\Menu;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Str;
+use phpDocumentor\Reflection\Types\Boolean;
 
 class MenuServices{
     public function getParent()
@@ -19,6 +20,7 @@ class MenuServices{
         try{
             Menu::create([
                 'name' => (string) $request-> input('name'),
+                'giasanpham'=>(int) $request->input('giasanpham'),
                 'parent_id' => (int) $request-> input('parent_id'),
                 'description' => (string) $request-> input('description'),
                 'content' => (string) $request-> input('content'),
@@ -36,15 +38,16 @@ class MenuServices{
         return true;
     }
 
-    public function update($request,$menu)
+    public function update($request,$menu) :bool
     {
-        $menu -> fill($request->input());
-        $menu -> save();
+            $menu -> fill($request->input());
+            $menu -> save();
 
 
 
-        Session::flash('success', 'Cập Nhật Thành Công');
-        return true;
+            Session::flash('success', 'Cập Nhật Thành Công');
+            return true;
+        
     }
 
 

@@ -17,6 +17,11 @@
                   </div>
 
                   <div class="form-group">
+                    <label>Giá Sản Phẩm</label>
+                    <input type="number"  name = "giasanpham"  class="form-control" value="{{ $menu->giasanpham }}" placeholder="Nhập giá sản phẩm">
+                  </div>
+
+                  <div class="form-group">
                     <label>Mô tả sản phẩm</label>
                     <textarea name="description" class="form-control" cols="30" rows="10">{{ $menu->description }}</textarea>
                   </div>

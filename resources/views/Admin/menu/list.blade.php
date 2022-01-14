@@ -4,10 +4,13 @@
         <thead>
             <tr>
                 <th>ID</th>
-                <th>Name</th>
-                <th>Active</th>
-                <th>update</th>
-                <th>Image</th>
+                <th>Tên</th>
+                <th>Giá Sản Phẩm </th>
+                <th>Hình Ảnh</th>
+                
+                <th>Thêm Vào Ngày</th>
+                <th>Trạng Thái Sản Phẩm</th>
+                
                 <th>&nbsp;</th>
 
             </tr>

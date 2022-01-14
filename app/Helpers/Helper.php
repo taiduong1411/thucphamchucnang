@@ -13,9 +13,11 @@ class Helper
                     <tr>
                         <td>' . $menu->id . '</td>
                         <td>' . $char . $menu->name . '</td>
-                        <td>' . self::active($menu->active)  . '</td>
+                        <td>' . $menu->giasanpham . '</td>
+                        <td><img src="uploads/image_product/'. $menu->image .'" /></td>
                         <td>' . $menu->updated_at . '</td>
-                        <td><img src="/image_product/'. $menu->image .'" /></td>
+                        <td>' . self::active($menu->active)  . '</td>
+                        
                         <td>
                             <a style="margin-right: 10px;" class="btn btn-primary btn-sm" href="/admin/menus/edit/' . $menu->id . '">
                                 <i class="fas fa-edit"></i>
