@@ -17,10 +17,12 @@ class LoginController extends Controller
     public function store(Request $request){
         $this ->validate($request,[
             'email' => 'required|email:filter',
-            'password' => 'required'
+            'password' => 'required',
+            'level' => 1
+        
         ]);
 
-        if (Auth::attempt(['email'=> $request->input('email'),'password' => $request->input('password')], $request->input('remember'))){
+        if (Auth::attempt(['email'=> $request->input('email'),'password' => $request->input('password'),'level' => $request(1)], $request->input('remember'))){
             return redirect()->route('admin');
         }
         Session::flash('error','Email hoặc password không đúng');

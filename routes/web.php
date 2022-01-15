@@ -41,9 +41,6 @@ Route::middleware(['auth'])->group(function(){
             Route::get('edit/{menu}',[MenuController::class,'show']);
             Route::post('edit/{menu}',[MenuController::class,'update']);
             Route::DELETE('destroy',[MenuController::class,'destroy']);
-
-
-
         });
         #route san pham
         Route::prefix('products')->group(function(){
