@@ -42,7 +42,7 @@
       <div class="row mt-2">
         <div class="col-md-6 col-12 col2">
           <h3>Lựa Chọn Hàng Đầu Của Người Tiêu Dùng</h3>
-          <button><a href="shop.html">Mua Ngay</a></button>
+          <button><a href="/user/shop">Mua Ngay</a></button>
         </div>
         <div class="col-md-6 col-12 col1">
           <img src="/template/user/dist/images/image_product/nha-thuoc-tue-minh-503985.jpg">
