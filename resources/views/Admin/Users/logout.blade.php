@@ -6,7 +6,7 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="#">T & N Shop</a>
+    <a href="#">Shop Thực Phẩm Chức Năng</a>
   </div>
   <!-- /.login-logo -->
   <div class="card">
