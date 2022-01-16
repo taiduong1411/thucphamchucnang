@@ -13,7 +13,7 @@
           <img src="/template/admin/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="/admin/main" class="d-block">Alexander Pierce<a href="/admin/users/logout" class="brand-text" >Log Out</a></a>
+          <a href="/admin/main" class="d-block">Quản Trị Viên<a href="/admin/users/logout" class="brand-text" >Log Out</a></a>
         </div>
       </div>
 

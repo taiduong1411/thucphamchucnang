@@ -1,0 +1,274 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/*=============header section==================== */
+#header
+{
+   min-height: 90vh;
+}
+#header span
+{
+    font-size:1.3em;
+    font-weight: 1000;
+    color: #5C1B1B;
+}
+#header .navbar
+{
+font-size: 1.3em;
+}
+#header .navbar ul li
+{
+    margin: 0.7em;
+}
+
+#header .row .col1
+{
+    max-width: 100%;
+    overflow: hidden;
+}
+#header .row .col1 img
+{
+ max-width: 100%;
+}
+#header .row .col2
+{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+#header .row .col2 h1
+{
+    font-size: 3em;
+    font-weight: 1000;
+} 
+#header .row .col2 p
+{
+    font-size: 20px;
+}
+#header .row .col2 button
+{
+    background-color: #5C1B1B;
+    font-size: 1.3em;
+    border-radius: 1.2em;
+    padding: 0.5em 1em;
+    border: none;
+    width: 40%;
+}
+#header .row .col2 button a
+{
+    color: #fff;
+    text-decoration: none;
+}
+/* ===========popular-collections================= */
+#pop-collections
+{
+    min-height: 80em;
+    padding: 0% auto 0%;
+    margin-bottom: 5%;
+}
+#pop-collections .title1
+{
+    text-align: center;
+    padding: 2%;
+}
+#pop-collections .title2
+    {
+        text-align: center;
+        margin-top: 5%;
+        padding: 2%;
+    }
+#pop-collections .title1 h2, .title2 h2
+{
+    font-weight: 800;
+}
+
+#pop-collections .title1 hr
+{
+    width: 26%;
+    height:5px;
+    color: #5C1B1B;
+    background-color:  #5C1B1B;
+}
+#pop-collections .title2 hr
+{
+    width: 18%;
+    height:5px;
+    color: #5C1B1B;
+    background-color:  #5C1B1B;
+}
+#pop-collections .row1
+{
+    overflow: hidden;
+}
+#pop-collections .row1 .col-1
+{
+    min-height: 20em;
+}
+
+#pop-collections .row1 .col-2
+{
+    min-height: 20em;
+    display: grid;
+    grid-auto-rows: 1fr;
+    background-color: rgb(187, 125, 125);
+}
+#pop-collections .row1 .col-2 .row
+{
+    overflow: hidden;
+}
+#pop-collections .row1 .col-2 .row img
+{
+    width: 100%;
+    height: 100%;
+}
+
+#pop-collections .row-rated
+{
+    min-height: 20em;
+    width: 90%;
+    margin:auto;
+} 
+#pop-collections .row-rated p
+{
+    text-align: center;
+    font-size: 1.3em;  
+    padding:3%;
+}
+#pop-collections .row-rated .image
+{
+     max-height: 20em; 
+    overflow: hidden;
+}
+/* ============footer===================== */
+#footer
+{
+padding: 2%  4% 9% 9% ;
+background-color: #3F3D3D;
+color: white;
+}
+#footer .col1, .col2
+{
+ margin-top: 4%;
+}
+#footer h3
+{
+   font-size: 1.5em;
+}
+#footer .li
+{
+    font-size: 1.1em;
+    margin-top: 1.5em;
+}
+#footer .li a
+{
+    text-decoration: none;
+    color: white;
+}
+#footer .li a:hover
+{
+    color: rgb(187, 125, 125);
+}
+#footer .li .fa
+{
+    margin-right: 1em;
+}
+
+/* MEDIA QUERY */
+@media only screen and (max-width: 600px) 
+{
+
+    /*=============header section==================== */
+    #header
+    {
+    min-height: 90vh;
+    }
+   
+    #header .row
+    {
+        margin-top: 0px;
+        height: 80vh;
+    }
+    #header .row .col1
+    {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    #header .row .col1 img
+    {
+        margin-top: 0;
+        padding-top: 0px;
+        text-align: center;
+    }
+   #header .row .col2
+    {
+        padding: 20%;
+    }
+   
+    #header .row .col2 h1
+    {
+        font-size: 1.7em;
+    } 
+    #header .row .col2 p
+    {
+        font-size: 13px;
+    }
+    #header .row .col2 button
+    {
+        background-color: #5C1B1B;
+        color: #fff;
+        font-size: 1em;
+        border-radius: 1.2em;
+        /* padding: 0.5em 1em; */
+        border: none;
+    }
+    /* ============pop collections===================== */
+    #pop-collections .title1 h2, .title2 h2
+    {
+        font-size: 1.2em;
+    }
+
+    #pop-collections .title1
+    {
+        padding: 2%;
+    }
+    #pop-collections .title2
+    {
+        margin-top: 10%;
+        padding: 2%;
+    }
+    #pop-collections .title1 hr
+    {
+        width: 30%;
+        height:2px;;
+    }
+    #pop-collections .title2 hr
+    {
+        width: 21%;
+        height:2px;
+    }
+    /* ============footer===================== */
+   
+    #footer .col1, .col2
+    {
+    margin-top: 10%;
+    }
+    #footer h3
+    {
+    font-size: 1.3em;
+    }
+    #footer .li
+    {
+        font-size: 1em;
+        margin-top: 1.2em;
+    }
+    #footer .li .fa
+    {
+        margin-right: 1em;
+    }
+
+
+
+}

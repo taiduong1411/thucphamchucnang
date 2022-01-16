@@ -18,27 +18,45 @@ class LoginController extends Controller
         $this ->validate($request,[
             'email' => 'required|email:filter',
             'password' => 'required',
-            'level' => 1
+            'level' => '1'
         
         ]);
 
-        if (Auth::attempt(['email'=> $request->input('email'),'password' => $request->input('password'),'level' => $request(1)], $request->input('remember'))){
+        if (Auth::attempt(['email'=> $request->input('email'),
+        'password' => $request->input('password'),'level'=>'1'], $request->input('remember'))){
             return redirect()->route('admin');
+        }
+        else if (Auth::attempt(['email'=> $request->input('email'),
+        'password' => $request->input('password'),'level'=>'2'], $request->input('remember'))){
+            return redirect()->route('user');
         }
         Session::flash('error','Email hoặc password không đúng');
         return redirect()->back();
     }
-//     public function store(Request $request)
-//    {
-//        $this->validate($request,[
-//            'email' =>'required|email',
-//            'password' => 'required'
-//        ]);
-//        $credentials = $request->only('email', 'password');
-//        if (Auth::attempt($credentials, $request->input('remember'))) {
-//             return redirect()->route('admin');
-//        }
-//        return redirect()->back();
-//    }
+
+
+
+
+
+    // public function index_home(){
+    //     return view('user.user_log.login_user',[
+    //         'title' => 'Đăng Nhập'
+    //     ]);
+    // }
+    // public function home(Request $request){
+    //     $this ->validate($request,[
+    //         'email' => 'required|email:filter',
+    //         'password' => 'required',
+    //         'level' => '2'
+        
+    //     ]);
+
+    //     if (Auth::attempt(['email'=> $request->input('email'),
+    //     'password' => $request->input('password'),'level'=>'2'], $request->input('remember'))){
+    //         return redirect()->route('user');
+    //     }
+    //     Session::flash('error','Email hoặc password không đúng');
+    //     return redirect()->back();
+    // }
 }
 

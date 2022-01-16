@@ -13,4 +13,14 @@ class MainController extends Controller
             'title'=> 'Trang Admin'
         ]);
     }
+    public function home(){
+        return view('user.main_user',[
+            'title'=> 'Trang User'
+        ]);
+    }
+    public function shop(){
+        return view('user.shop',[
+            'title'=> 'Shop'
+        ]);
+    }
 }
